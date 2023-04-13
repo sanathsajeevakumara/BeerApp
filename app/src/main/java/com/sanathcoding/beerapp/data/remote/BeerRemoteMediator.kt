@@ -8,6 +8,7 @@ import androidx.room.withTransaction
 import com.sanathcoding.beerapp.data.local.BeerDatabase
 import com.sanathcoding.beerapp.data.local.BeerEntity
 import com.sanathcoding.beerapp.data.local.toBeerEntity
+import kotlinx.coroutines.delay
 import retrofit2.HttpException
 import java.io.IOException
 
@@ -36,12 +37,13 @@ class BeerRemoteMediator(
                 }
 
             // call beer api
+            delay(2000L)
             val beers = beerApi.getBeers(
                 page = loadKey,
                 pageCount = state.config.pageSize
             )
 
-            // insert remote data to beerdb - SST
+            // insert remote data into beerdb - SST
             beerDb.withTransaction {
                 if (loadType == LoadType.REFRESH) {
                     beerDb.dao.clearAll()
