@@ -19,7 +19,7 @@ Beer application with compose paging 3 and caching
 * [Room][3]: for Local Data store.
 * [Dagger Hilt][4]: Dependency injection library for Android.
 * [Retrofit][5]: Type-safe REST client for Android to consume RESTful web services.
-* [Koil][8]: Image downloading and caching library supported by Jetpack Compose.
+* [Coil][8]: Image downloading and caching library supported by Jetpack Compose.
 
 
 [0]:  https://developer.android.com/jetpack
@@ -28,8 +28,8 @@ Beer application with compose paging 3 and caching
 [3]:  https://developer.android.com/training/data-storage/room
 [4]:  https://dagger.dev/hilt/
 [5]:  https://github.com/square/retrofit
-[8]: https://github.com/bumptech/glide
-[9]: https://punkapi.com/documentation/v2
+[8]:  https://coil-kt.github.io/coil/compose/
+[9]:  https://punkapi.com/documentation/v2
 
 ## Package Structure :bookmark_tabs:
 
